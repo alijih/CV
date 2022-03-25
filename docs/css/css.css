@@ -1,27 +1,27 @@
 /* ******************LANDING********************* */
 
-body{
-    scrollbar-width:none;
-    overflow-y:scroll;
+body {
+    scrollbar-width: none;
+    overflow-y: scroll;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.landing{
-    
+.landing {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
     /* background-color: white; */
     overflow: hidden;
-    display:block;
+    display: block;
     flex-wrap: wrap;
     position: fixed;
     top: 0;
     z-index: 0;
 
 }
-.who{
+
+.who {
     transition: all 2s ease-in-out;
     position: absolute;
     font-family: 'Anton', sans-serif;
@@ -30,132 +30,151 @@ body{
     text-align: center;
     background-image: url('../img/Diseño\ sin\ título\(2\).png');
     background-position: center;
-    background-clip: text; 
+    background-clip: text;
     z-index: 0;
 }
-.who h1{
+
+.who h1 {
     margin-top: 2rem;
     font-size: 150px;
     font-weight: 200;
-    color: transparent; 
+    color: transparent;
 }
-.who h4{
+
+.who h4 {
     font-size: 2rem;
-    font-weight:50;
+    font-weight: 50;
     color: white;
     margin-top: -9rem;
 }
+
 /* *******************CODIGO FLOTANTE*********** */
 @keyframes trasladarXatras {
-    100%{transform: translateX(-260vw);
-        z-index: -1;}
-}
-@keyframes retrocederXatras {
-    100%{transform: translateX(200vw);
-        z-index: 1;}
+    100% {
+        transform: translateX(-260vw);
+        z-index: -1;
+    }
 }
 
-#texto0,#texto1,#texto2,#texto3,#texto4,#texto5,#texto6,#texto7,#texto8,#texto9{
+@keyframes retrocederXatras {
+    100% {
+        transform: translateX(200vw);
+        z-index: 1;
+    }
+}
+
+#texto0, #texto1, #texto2, #texto3, #texto4, #texto5, #texto6, #texto7, #texto8, #texto9 {
     position: relative;
     background-color: transparent;
 }
-#texto0{
+
+#texto0 {
     width: 100%;
-    transform: translate(100vw,40px);
-    animation-name:trasladarXatras;
+    transform: translate(100vw, 40px);
+    animation-name: trasladarXatras;
     animation-duration: 18s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 1;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
-#texto1{
+
+#texto1 {
     width: 100%;
-    transform: translate(-100vw,40px);
-    animation-name:retrocederXatras;
+    transform: translate(-100vw, 40px);
+    animation-name: retrocederXatras;
     animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 3;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
-#texto2{
+
+#texto2 {
     width: 100%;
-        transform: translate(100vw,40px);
-    animation-name:trasladarXatras;
+    transform: translate(100vw, 40px);
+    animation-name: trasladarXatras;
     animation-duration: 27s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 1;
 }
-#texto3{
+
+#texto3 {
     width: 100%;
-    transform: translate(-100vw,40px);
-    animation-name:retrocederXatras;
+    transform: translate(-100vw, 40px);
+    animation-name: retrocederXatras;
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 3;
 }
-#texto4{
+
+#texto4 {
     width: 100%;
-    transform: translate(100vw,40px);
-    animation-name:trasladarXatras;
+    transform: translate(100vw, 40px);
+    animation-name: trasladarXatras;
     animation-duration: 13s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 1;
 }
-#texto5{width: 100%;
-    transform: translate(-100vw,40px);
-    animation-name:retrocederXatras;
+
+#texto5 {
+    width: 100%;
+    transform: translate(-100vw, 40px);
+    animation-name: retrocederXatras;
     animation-duration: 28s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 3;
 }
-#texto6{width: 100%;
-    transform: translate(100vw,40px);
-    animation-name:trasladarXatras;
+
+#texto6 {
+    width: 100%;
+    transform: translate(100vw, 40px);
+    animation-name: trasladarXatras;
     animation-duration: 17s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 1;
 }
-#texto7{width: 100%;
-    transform: translate(-100vw,40px);
-    animation-name:retrocederXatras;
+
+#texto7 {
+    width: 100%;
+    transform: translate(-100vw, 40px);
+    animation-name: retrocederXatras;
     animation-duration: 21s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 3;
 }
-#texto8{width: 100%;
-    transform: translate(100vw,40px);
-    animation-name:trasladarXatras;
+
+#texto8 {
+    width: 100%;
+    transform: translate(100vw, 40px);
+    animation-name: trasladarXatras;
     animation-duration: 17s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 1;
 }
-#texto9{width: 100%;
-    transform: translate(-100vw,40px);
-    animation-name:retrocederXatras;
+
+#texto9 {
+    width: 100%;
+    transform: translate(-100vw, 40px);
+    animation-name: retrocederXatras;
     animation-duration: 26s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 3;
 }
-/*transform: translate(-350px,0);
--webkit-transform: translate(-350px,0);  Safari & Chrome 
--o-transform: translate(-350px,0);  Opera 
--moz-transform: translate(-350px,0);  Firefox*/
 
 /* ****************** MENU FLOTANTE************ */
-.sidebar-indicator{
+.sidebar-indicator {
     z-index: 4;
     position: fixed;
-    top:50vh;
+    top: 50vh;
     transform: translateY(-50%);
     right: 0;
     display: block;
@@ -164,49 +183,48 @@ body{
     background-color: transparent;
     padding: 5px;
 }
-.sidebar-indicator div{
+
+.sidebar-indicator div {
     margin: 10px auto;
     width: 50px;
     height: 5px;
-
     background-color: rgb(253, 4, 4);
-    /* box-shadow: 2px 2px 1px rgba(255,255,255,0.5),
-                -2px -2px 1px rgba(255,255,255,0.5),
-                -2px 2px 1px rgba(255,255,255,0.5),
-                2px -2px 1px rgba(255,255,255,0.5); */
     transition: transform 0.1s ease-in-out;
 }
-.sidebar-indicator div:hover{
+
+.sidebar-indicator div:hover {
     cursor: pointer;
     transform: scale(1.5);
     color: rgb(175, 8, 8);
     background-color: rgb(126, 126, 126);
     margin: 10px auto;
-    
+
 }
 
 /* ************** FIRST SECTOR **************** */
-.first-sector{
+.first-sector {
     height: auto;
     width: 100%;
     opacity: 1;
     z-index: 0;
 }
-.aboutME{
+
+.aboutME {
     opacity: 0;
     position: fixed;
     height: 100px;
     width: 100px;
     top: 40vh;
-    transform:scale(1);
+    transform: scale(1);
     left: 45vw;
     background-image: url('../img/notebook2.png');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; 
-    
+    background-repeat: no-repeat;
+
 }
-.aboutME .background-negro{
+
+.aboutME .background-negro {
     background-color: black;
     position: relative;
     top: 15px;
@@ -215,7 +233,8 @@ body{
     width: 85%;
     opacity: 1;
 }
-.aboutME video{
+
+.aboutME video {
     position: relative;
     width: 85%;
     left: 7px;
@@ -223,49 +242,98 @@ body{
     opacity: 0;
 }
 
+.first-sector .wwi {
+    opacity:0;
+    position: fixed;
+    padding: 10px;
+    height: auto;
+    width: 500px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 3px 3px rgba(99, 127, 253, 1),
+        3px -3px 3px rgba(99, 127, 253, 1),
+        -3px 3px 3px rgba(99, 127, 253, 1),
+        -3px -3px 3px rgba(99, 127, 253, 1);
+    top: 40vh;
+    left: 30vw;
+    z-index: 1;
+
+}
+.first-sector .wwi .second{
+    display: none;
+}
+@keyframes wwi-appear{
+    0%{ opacity:0.5;
+        top:110vh;
+        left:-100%;
+        transform:scale(0);
+    }
+    40%{
+        opacity: 1;
+        top: 20vh;
+        left: 20vw;}
+    90%{
+        top: 50vh;
+        left: 40vw;
+    }
+    100%{
+        transform: scale(1);
+        top: 40vh;
+        left: 30vw;
+    }
+}
 
 @media (max-width: 1010px) {
-    .who h1{
+    .who h1 {
         font-size: 130px;
     }
-    .who h4{
+
+    .who h4 {
         margin-top: -5rem;
     }
 }
+
 @media (max-width: 875px) {
-    .who h1{
+    .who h1 {
         margin-top: 3rem;
         font-size: 110px;
     }
-    .who h4{
+
+    .who h4 {
         margin-top: -2rem;
     }
 }
+
 @media (max-width: 740px) {
-    .who h1{
+    .who h1 {
         margin-top: 4rem;
         font-size: 100px;
     }
-    .who h4{
+
+    .who h4 {
         font-size: 2rem;
     }
 }
+
 @media (max-width: 675px) {
-    .who h1{
+    .who h1 {
         margin-top: 2rem;
         font-size: 100px;
     }
-    .who h4{
+
+    .who h4 {
         font-size: 2rem;
         margin-top: -5rem;
     }
 }
+
 @media (max-width: 435px) {
-    .who h1{
+    .who h1 {
         margin-top: 6rem;
         font-size: 70px;
     }
-    .who h4{
+
+    .who h4 {
         font-size: 1rem;
         margin-top: -2rem;
     }

@@ -1,4 +1,4 @@
-var landing,HeightPantalla,first_sector,HeightFirst,aboutME, posY, posx,posXfinal,posYfinal,background,video;
+var landing,HeightPantalla,first_sector,HeightFirst,aboutME, posY, posx,posXfinal,posYfinal,background,video,wwi;
 var escalaAboutME=0,posicionY = window.scrollY;
 var direccionY = 0;
 var aleteo = 0;
@@ -7,6 +7,7 @@ var barra_progreso_scroll = { style: 0 };
 var estado=0;
 window.addEventListener('load',()=>{
     landing=document.querySelector('.landing');
+    wwi=document.querySelector('.wwi');
     landing.style.opacity = 1;
     HeightPantalla = landing.offsetHeight;
     first_sector = document.querySelector('.first-sector');
@@ -59,6 +60,8 @@ window.addEventListener('scroll', () => {
                     posXfinal=aboutME.getBoundingClientRect().x;
                     posXfinal=aboutME.getBoundingClientRect().y;
                     background.style.opacity = 0;
+                    wwi.style.animation="wwi-appear 5s 1";
+                    wwi.style.opacity=1;
                     estado=3;
                 }
              }
