@@ -5,6 +5,9 @@ body {
     overflow-y: scroll;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+    background: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
+
 }
 
 .landing {
@@ -188,14 +191,14 @@ body {
     margin: 10px auto;
     width: 50px;
     height: 5px;
-    background-color: rgb(253, 4, 4);
+    background-color: rgb(255, 255, 255);
     transition: transform 0.1s ease-in-out;
 }
 
 .sidebar-indicator div:hover {
     cursor: pointer;
     transform: scale(1.5);
-    color: rgb(175, 8, 8);
+    color: rgb(255, 255, 255);
     background-color: rgb(126, 126, 126);
     margin: 10px auto;
 
@@ -207,6 +210,7 @@ body {
     width: 100%;
     opacity: 1;
     z-index: 0;
+
 }
 
 .aboutME {
@@ -222,6 +226,22 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+@keyframes background{
+    0%{background-image: url('../img/notebook2.png');
+        opacity:1}
+    2%{opacity:0;
+        background-image: url('../img/notebook1.png')}
+    4%{opacity:1;
+        background-image: url('../img/notebook1.png');}
+    96%{opacity:1;
+        background-image: url('../img/notebook1.png');
+    }
+    98%{opacity:0;
+        background-image: url('../img/notebook2.png');
+    }
+    100%{opacity:1;
+        background-image: url('../img/notebook2.png');}
 }
 
 .aboutME .background-negro {
@@ -254,7 +274,7 @@ body {
         3px -3px 3px rgba(99, 127, 253, 1),
         -3px 3px 3px rgba(99, 127, 253, 1),
         -3px -3px 3px rgba(99, 127, 253, 1);
-    top: 40vh;
+    top: 20vh;
     left: 30vw;
     z-index: 1;
 
@@ -271,17 +291,109 @@ body {
     40%{
         opacity: 1;
         top: 20vh;
-        left: 20vw;}
-    90%{
-        top: 50vh;
+        left: 10vw;}
+    70%{
+        top: 40vh;
         left: 40vw;
     }
     100%{
         transform: scale(1);
-        top: 40vh;
+        top: 20vh;
         left: 30vw;
     }
 }
+@keyframes secondAnimation{
+    0%{opacity:0;
+        top:80vh;}
+    100%{opacity:1;}
+}
+.first-sector .html,.css,.js,.angular,.node{
+    height: 100px;
+    width:100px;
+    background-color:red;
+    opacity:0;
+    z-index: 1;
+    position:fixed;
+    top:68vh;
+    /* animation: languages 5s 1; */
+    
+}
+.first-sector .html{ left:25vw}
+.first-sector .css{left:35vw}
+.first-sector .js{left:45vw}
+.first-sector .angular{left:55vw}
+.first-sector .node{left:65vw}
+
+@keyframes languages{
+    0%{opacity:0;
+    transform:scale(0);
+    left:10vw;
+    }
+    75%{transform:scale(0.9) translateX(100%)}
+    100%{opacity:1;
+        transform:scale(1) translateX(0)
+    }
+}
+.second-sector {
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    position:fixed;
+    top: 0;
+
+}
+@keyframes caer{
+    0%{transform: translateY(-100vh);}
+    100%{transform: translate(0);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1010px) {
     .who h1 {
